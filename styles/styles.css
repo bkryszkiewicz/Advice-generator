@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.advice-card {
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 650px;
+  width: 100%;
+  border-radius: 1rem;
+}
+.advice-card__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 2.5rem 2rem;
+  text-align: center;
+}
+.advice-card__title {
+  color: hsl(150, 100%, 66%);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+}
+.advice-card__quote {
+  color: hsl(193, 38%, 86%);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.advice-card__button {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  padding: 0.7142857143rem;
+  display: flex;
+  font-size: 1rem;
+  position: relative;
+  top: 1em;
+  cursor: pointer;
+}
+.advice-card__button:hover {
+  box-shadow: 0px 0px 1.5em 0.5em hsl(150, 100%, 66%);
+}
+.advice-card__divider-desktop {
+  display: flex;
+  width: 100%;
+}
+.advice-card__divider-mobile {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .advice-card__divider-mobile {
+    display: flex;
+    width: 100%;
+  }
+  .advice-card__divider-desktop {
+    display: none;
+  }
+}
+footer {
+  color: hsl(217, 19%, 38%);
+  font-size: 0.7142857143rem;
+  padding: 0px 0px 20px;
+  letter-spacing: 0.1rem;
+}
+
+.footer {
+  text-align: center;
+}
+.footer__link {
+  text-decoration: none;
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

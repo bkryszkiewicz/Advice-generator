@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import './scss-addons/functions.scss';
+
+$primary-cyan: hsl(193, 38%, 86%);
+$primary-green: hsl(150, 100%, 66%);
+$neutral-grayish-blue: hsl(217, 19%, 38%);
+$neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+$neutral-dark-blue: hsl(218, 23%, 16%);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $neutral-dark-blue;
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.body-container{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+.advice-card {
+    background-color: $neutral-dark-grayish-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 650px;
+    width: 100%;
+    border-radius: 1rem;
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem 2.5rem 2rem;
+        text-align: center;
+    }
+
+    &__title {
+        color: $primary-green;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+    }
+
+    &__quote {
+        color: $primary-cyan;
+        font-size: convertPxToRem(28);
+        margin-bottom: 2rem;
+    }
+
+    &__button {
+        background-color: $primary-green;
+        border: none;
+        border-radius: 50%;
+        padding: convertPxToRem(20);
+        display: flex;
+        font-size: convertPxToRem(28);
+        position: relative;
+        top: 1em;
+        cursor: pointer;
+
+        &:hover {
+            -webkit-box-shadow: 0px 0px 1.5em 0.5em $primary-green;
+            -moz-box-shadow: 0px 0px 1.5em 0.5em $primary-green;
+            box-shadow: 0px 0px 1.5em 0.5em $primary-green;
+        }
+    }
+
+    &__divider-desktop {
+        display: flex;
+        width: 100%;
+    }
+
+    &__divider-mobile {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .advice-card {
+
+        &__divider-mobile {
+            display: flex;
+            width: 100%;
+        }
+
+        &__divider-desktop {
+            display: none;
+        }
+    }
+}
+
+footer {
+    color: $neutral-grayish-blue;
+    font-size: convertPxToRem(20);
+    padding: 0px 0px 20px;
+    letter-spacing: 0.1rem;
+}
+
+.footer {
+    text-align: center;
+    &__link {
+        text-decoration: none;
+        color: $primary-green;
+        text-align: center;
+
+    }
+}
