@@ -25,13 +25,13 @@ body {
 
 }
 
-.body-container{
+.body-container {
     display: flex;
     align-items: center;
     flex-grow: 1;
     justify-content: center;
     flex-direction: column;
-    }
+}
 
 .advice-card {
     background-color: $neutral-dark-grayish-blue;
@@ -103,7 +103,7 @@ body {
             font-size: convertPxToRem(24);
 
         }
-    
+
         &__divider-mobile {
             display: flex;
             width: 100%;
@@ -124,6 +124,7 @@ footer {
 
 .footer {
     text-align: center;
+
     &__link {
         text-decoration: none;
         color: $primary-green;

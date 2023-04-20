@@ -4,13 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -19,15 +15,14 @@
 
     <div class="advice-card">
       <div class="advice-card__container">
-        <h5 class="advice-card__title">Advice #<span id="advice-number" class="advice-card__span"></span>
-          <!-- Advice ID goes here -->
-        </h5>
+
+        <h5 class="advice-card__title">Advice #<span id="advice-number" class="advice-card__span"></span></h5>
         <p id="advice-quote" class="advice-card__quote">
         </p>
 
-
         <img src="images/pattern-divider-desktop.svg" class="advice-card__divider-desktop">
         <img src="images/pattern-divider-mobile.svg" class="advice-card__divider-mobile">
+        
       </div>
 
       <button class="advice-card__button" onclick="rollAdvice()"><img src="images/icon-dice.svg" alt="dice"></button>
