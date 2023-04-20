@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-<div class="body-container">
+  <div class="body-container">
 
-<div class="advice-card">
-<div class="advice-card__container">
-  <h5 class="advice-card__title">Advice #<span id="advice-number" class="advice-card__span"></span> <!-- Advice ID goes here -->
-  </h5>
-<p id="advice-quote" class="advice-card__quote">
-</p>
+    <div class="advice-card">
+      <div class="advice-card__container">
+        <h5 class="advice-card__title">Advice #<span id="advice-number" class="advice-card__span"></span>
+          <!-- Advice ID goes here -->
+        </h5>
+        <p id="advice-quote" class="advice-card__quote">
+        </p>
 
 
-<img src="images/pattern-divider-desktop.svg" class="advice-card__divider-desktop">
-<img src="images/pattern-divider-mobile.svg"
-class="advice-card__divider-mobile">
-</div>
+        <img src="images/pattern-divider-desktop.svg" class="advice-card__divider-desktop">
+        <img src="images/pattern-divider-mobile.svg" class="advice-card__divider-mobile">
+      </div>
 
-<button class="advice-card__button" onclick="rollAdvice()"><img src="images/icon-dice.svg" alt="dice"></button>
+      <button class="advice-card__button" onclick="rollAdvice()"><img src="images/icon-dice.svg" alt="dice"></button>
 
-</div>
-</div>
+    </div>
+  </div>
 
   <footer class="footer">
-  <div class="footer">
-    Challenge by - <a class="footer__link"href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by Barbara K
-  </div>
-</footer>
-<script src="app.js"></script>
+    <div class="footer">
+      Challenge by - <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by Barbara K
+    </div>
+  </footer>
+  <script src="app.js"></script>
 </body>
+
 </html>
