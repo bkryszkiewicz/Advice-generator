@@ -39,7 +39,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 4rem 2.5rem 2rem;
+  padding: 4rem 3.5rem 2rem;
   text-align: center;
 }
 .advice-card__title {
@@ -49,6 +49,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-weight: 700;
+  margin: 0px;
 }
 .advice-card__quote {
   color: hsl(193, 38%, 86%);
@@ -78,6 +79,9 @@ body {
 }
 
 @media (max-width: 450px) {
+  .advice-card__quote {
+    font-size: 1.5rem;
+  }
   .advice-card__divider-mobile {
     display: flex;
     width: 100%;

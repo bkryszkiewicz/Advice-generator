@@ -13,7 +13,7 @@ async function rollAdvice() {
     let adviceQuote = document.getElementById("advice-quote");
 
     adviceNumber.innerHTML = `${data.slip.id}`;
-    adviceQuote.innerHTML = `${data.slip.advice}`;
+    adviceQuote.innerHTML = `"${data.slip.advice}"`;
 
 };
 

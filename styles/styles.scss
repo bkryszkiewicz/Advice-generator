@@ -49,7 +49,7 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 4rem 2.5rem 2rem;
+        padding: 4rem 3.5rem 2rem;
         text-align: center;
     }
 
@@ -60,6 +60,7 @@ body {
         text-transform: uppercase;
         letter-spacing: 0.3rem;
         font-weight: 700;
+        margin: 0px;
     }
 
     &__quote {
@@ -98,7 +99,11 @@ body {
 
 @media (max-width:450px) {
     .advice-card {
+        &__quote {
+            font-size: convertPxToRem(24);
 
+        }
+    
         &__divider-mobile {
             display: flex;
             width: 100%;
